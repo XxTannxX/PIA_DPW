@@ -1,0 +1,138 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(58, 2, 2);
+    background:#c999;
+    font-size: 1em;
+    line-height: 1.5em;
+ 
+    padding-top: 80px; /*relleno superior igual a la altura de la cabecera*/
+}
+ 
+h1{
+    font-size:2.3em;
+    line-height:1.3em;
+    margin: 15px 0;
+    text-align: center;
+    font-weight:300;
+}
+ 
+p{
+    margin: 0 0 1.5em 0;
+}
+ 
+img{
+    max-width: 100%;
+    height: auto;
+}
+/*estas líneas de CSS las usaremos para dar estilo a la cabecera*/
+#main-header{
+    background: #f7a0a0;
+    color: rgb(26, 23, 23);
+    height:80px;
+}
+#main-header a{
+    color:rgb(252, 246, 246);
+}
+/*para insertar Logo*/
+#logo-header{
+    float: left;
+    padding: 15px 0 0 20px;
+    text-decoration: none;
+}
+#logo-header:hover{
+    color:#030301
+ 
+}
+#logo-header .site-name{
+    display: block;
+    font-weight: 300;
+    font-size: 0.8em;
+    color: #f02b2b;
+}
+/*navegación en el menu horizontal*/
+nav{
+    float:right;
+}
+nav ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+    padding-right:20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+}
+nav ul li a{
+    display:block;
+    padding: 0 5px;
+    text-decoration:none;
+}
+nav ul li a:hover{
+    background: rgb(221, 145, 150), 160, 161; /*color gris del block*/
+}
+/*lista de menus*/
+li{
+    font:Arial;
+    float: left;  /*carga los menus a la izquierda*/
+}
+li a, .dropbtn{
+    display: inline-block;
+    color: rgb(190, 54, 0); /*color del texto en la barra*/
+    text-align: center;
+    padding:0px 16;
+    text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn{
+     background-color:rgb(201, 147, 151)  /*color de la lista seleccionada*/
+}
+/*lista de verticales*/
+li.deopdow{
+    display: inline-block;
+}
+.dropdown-content{
+    display:none;
+    position:absolute;
+    background-color: #E6B0AA;
+    min-width: 80px;
+    box-shadow: 0px 9px 16px 0px rgba(0,0,0,0,2);
+    z-index:1;
+}
+.dropdown-content a{
+    color:rgb(116, 3, 3);
+    padding: 6px 8px;
+    text-decoration: none;
+    display:block;
+    text-align: left;
+}
+.dropdown-content a:hover{
+    background-color: rgb(250, 192, 192); /*color de elemento al ir seleccionando*/
+}
+.dropdown:hover .dropdown-content{
+display: block
+}
+/* con estos nestilos aplicaremos diseño al contenido*/
+#main-content{
+    background: white;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+#main-content header,
+#main-content .content{
+    padding:40px;
+}
+/*y por ultimo fijamos la cabecera*/
+#main-header{
+    background: #9c5555;
+    color: rgb(155, 69, 69);
+    height: 80px;
+ 
+    width: 100%; /*hacemos que la cabecera ocupe el ancho completo de la página*/
+    left:0; /*posiconamos la cabecera de lado izquierdo*/
+    top: 0; /*posicionamos la cabecera pedaga arriba*/
+    position: fixed; /*hacemos que la cabecera tenga una posición fija*/
+}
